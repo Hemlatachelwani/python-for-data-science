@@ -33,3 +33,5 @@ print(a@b)
  
  ***********************************************************************************************************
  
+ But it's important to know that numpy is the underpinning of scientific computing libraries and Python. And that is capable of doing both element wise operations, 
+ so the asterisks as well as matrix level operations, so the @ sign. 
