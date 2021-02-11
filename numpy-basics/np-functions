@@ -1,0 +1,33 @@
+import numpy as np
+
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+b=np.array([3,5,6,7,8])
+print(arr.ndim)
+print(arr.dtype)
+print(arr.dtype.name)
+print(b.ndim)
+print(b.shape)
+print(b.dtype)
+print(b.dtype.name)
+
+
+c=np.array([2.4,5,9.1])
+print(c.dtype.name)
+#  Numpy will try and give you the best data type format possible to keep your data types homogeneous, which means that they're all the same in the array. Sometimes we know the shape of an array that we want to create, but not what we want to be in it. None by offer several functions, to create arrays with initial placeholders such as zeros or ones.
+
+d=np.zeros((2,5))
+e=np.ones((1,4))
+f=np.random.rand(2,4)
+print(d)
+print(e)
+print(f)
+
+#We can also create a sequence of numbers in an array with the arrange function. The first argument is the starting bound and the second argument is the ending bound and the third argument is the difference between each consecutive number. 
+
+#print(np.arrange(10,30,2))
+
+# If we want to generate a sequence of floats, we use something called linspace. In this function, the third argument isn't the difference between two numbers, but it's the total number of items that you want to generate. So you want to watch out for that, so, np.linspace( 0, 2, 15 ] and what this really means is we want 15 numbers from 0, inclusive to 2, inclusive.
+#print(np.arrange(23,45,10))
+
+a1=np.linspace(12,34,7)
+print(a1)
