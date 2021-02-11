@@ -42,6 +42,31 @@ c=a+b
 print(c.dtype)
 d=a*b
 print(d,d.dtype)
+Output:
+ float64
+[ 2.4  6.  24. ] float64
+
 The 64 in this example refers to the number of bits that the operating system is reserving to represent the number which determines the size or the precision of the numbers that can be represented.
 notice how the items in the resulting arrays have been upcast into floating point numbers. Now, numpy arrays also have an interesting aggregation functions on them, such as sum, max, min and mean. 
+**********************************************************************************************************
+import numpy as np
 
+
+
+a=np.array([1,2,3])
+b=np.array([2.4,3,8])
+c=a+b
+print(c,c.dtype)
+
+
+print(c.min())
+print(c.max())
+print(c.mean())
+#print(c.median()) - error, numpy.ndarray' object has no attribute 'median'
+print(c.sum())
+
+output:[ 3.4  5.  11. ] float64
+3.4
+11.0
+6.466666666666666
+19.4
