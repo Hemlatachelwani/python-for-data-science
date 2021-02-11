@@ -35,3 +35,13 @@ print(a@b)
  
  But it's important to know that numpy is the underpinning of scientific computing libraries and Python. And that is capable of doing both element wise operations, 
  so the asterisks as well as matrix level operations, so the @ sign. 
+ 
+a=np.array([1,2,3])
+b=np.array([2.4,3,8])
+c=a+b
+print(c.dtype)
+d=a*b
+print(d,d.dtype)
+The 64 in this example refers to the number of bits that the operating system is reserving to represent the number which determines the size or the precision of the numbers that can be represented.
+notice how the items in the resulting arrays have been upcast into floating point numbers. Now, numpy arrays also have an interesting aggregation functions on them, such as sum, max, min and mean. 
+
