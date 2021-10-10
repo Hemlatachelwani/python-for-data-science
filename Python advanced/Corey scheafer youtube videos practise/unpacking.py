@@ -12,7 +12,7 @@
 #  a,b,c=(12,4)
 # ValueError: not enough values to unpack (expected 3, got 2)
 
-# u can store var no. of args via * 
+# u can store var no. of args via *
 a,b,*c,d=(12,45,89,2,90,7)
 print(a)
 print(b)
