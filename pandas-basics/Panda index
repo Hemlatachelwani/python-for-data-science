@@ -1,0 +1,6 @@
+https://www.geeksforgeeks.org/difference-between-loc-and-iloc-in-pandas-dataframe/
+
+Difference between location and iloc in dataframe 
+With loc, u can access rows n columns , while with iloc,  u can access rows n columns on integer basis..
+
+When only one dimension is there in loc, it's for row 
