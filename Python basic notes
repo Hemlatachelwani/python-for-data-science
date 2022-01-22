@@ -1,0 +1,30 @@
+Python basics notes 
+
+Floor division 9//2 
+What's the output ? 
+
+// is the floored-division operator in Python. The difference is visible when dividing floating point values.
+
+In Python2, dividing two ints uses integer division, which ends up getting you the same thing as floored division. However, you can still use // to get a floored result of floating point division. live example
+
+# Python 2
+>>> 10.0 / 3
+3.3333333333333335
+>>> 10.0 // 3
+3.0
+However, in Python3, dividing two ints results in a float, but using // acts as integer division. live example
+
+# Python3
+>>> 10 / 3
+3.3333333333333335
+>>> 10 // 3
+3
+If you are (still) working in Python2, but want to someday convert to Python3, you should always use // when dividing two ints, or use from __future__ import division to get the Python3 behavior in Python2
+
+Floored division means round towards negative infinity. This is the same as truncation for positive values, but not for negative. 3.3 rounds down to 3, but -3.3 rounds down to -4.
+
+# Python3
+>>> -10//3
+-4
+>>> 10//3
+3
