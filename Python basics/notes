@@ -31,3 +31,5 @@ Floored division means round towards negative infinity. This is the same as trun
 ‐--------------------------------------
 https://www.geeksforgeeks.org/g-fact-21-increment-and-decrement-operators-in-python/
 No increment n decrement operators. 
+
+The ‘//’ operator in Python returns the integer part of the floating number.
